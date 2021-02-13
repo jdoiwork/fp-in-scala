@@ -3,7 +3,7 @@ FROM ubuntu
 SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && \
-    apt-get install curl zip -y && \
+    apt-get install curl zip git -y && \
     curl -s "https://get.sdkman.io" | bash && \
     source "/root/.sdkman/bin/sdkman-init.sh" && \
     sdk install java 15.0.2.hs-adpt  && \
